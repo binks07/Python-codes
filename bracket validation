@@ -19,5 +19,5 @@ def validate_bracket(foo):
         b='no'
     return b
 
-foo = '({[}[])({]})'
+foo =input("Please enter a string with brackets")
 print(validate_bracket(foo))
