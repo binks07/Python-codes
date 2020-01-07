@@ -1,0 +1,23 @@
+def validate_bracket(foo):
+    a=list(foo)
+    w=['(','[','{']
+    q={'(':')','[':']','{':'}'}
+    if a.count('(')==a.count(')') and a.count('[')==a.count(']') and a.count('{')==a.count('}'):
+        for f in w:
+            k = a.count(f)
+            for j in range(k):
+                c1 = a.index(f)
+                c2 = a.index(q[f])
+                if c1 < c2:
+                    a.remove(f)
+                    a.remove(q[f])
+                    b='yes'
+                else:
+                    b='no'
+                    return b
+    else:
+        b='no'
+    return b
+
+foo = '({[}[])({]})'
+print(validate_bracket(foo))
