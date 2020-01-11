@@ -8,8 +8,6 @@ def recurring(f):
             break
     return b
 
-
-
 foo=input("please enter the name")
 f=str(foo)
 print(recurring(f))
