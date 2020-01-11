@@ -12,8 +12,5 @@ def recurring(f):
 
 foo=input("please enter the name")
 f=str(foo)
-print(f)
-a=list(f)
-print(a)
 print(recurring(f))
 
